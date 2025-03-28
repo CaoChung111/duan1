@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 align="center" style="color: rgb(33, 91, 72)">
+      Phiếu đăng ký tham gia chương trình khuyến mãi
+    </h2>
+    <form>
+      <table
+        align="center"
+        width="550px"
+        border="1"
+        cellpadding="5"
+        cellspacing="0"
+        bgcolor="#dff0d8"
+      >
+        <tr>
+          <td>Họ và tên</td>
+          <td>
+            <input
+              type="text"
+              id="ten"
+              name="ten"
+              value="Nguyễn Ngọc Quỳnh Nga"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td>
+            <input
+              type="text"
+              id="adr"
+              name="adr"
+              value="2Bia hùng Vương, Q10"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td>
+            <input type="tel" id="phone" name="phone" value="0909097506" />
+          </td>
+        </tr>
+        <tr>
+          <td>Phái</td>
+          <td>
+            <input type="radio" id="nam" name="nam" value="Nam" />
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="nu" value="Nữ" />
+            <label for="nu">Nữ</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Nghề nghiệp</td>
+          <td>
+            <select id="nghe" name="nghe">
+              <option selected>Giáo viên</option>
+              <option>Kỹ sư</option>
+              <option>Học sinh</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn sản phẩm tham gia</td>
+          <td>
+            <input type="checkbox" id="sp1" name="sp1" />
+            <label for="sp1">Kem đánh rắng</label><br />
+            <input type="checkbox" id="sp2" name="sp2" />
+            <label for="sp2">Bột giặt</label><br />
+            <input type="checkbox" id="sp3" name="sp3" />
+            <label for="sp3">dầu gội đầu</label><br />
+            <input type="checkbox" id="sp4" name="sp4" />
+            <label for="sp4">Sữa tắm</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Số người dự đoán tham gia</td>
+          <td>
+            <input type="text" id="so" name="so" value="250000" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Đồng ý" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

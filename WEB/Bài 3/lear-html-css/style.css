@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style-type: none;
+}
+header {
+  background-color: gray;
+  margin-bottom: 200px;
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+header .logo {
+  width: 100px;
+  height: auto;
+}
+header .card-header {
+  display: flex;
+  background-color: rgba(119, 113, 113, 0.566);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px;
+}
+header .card-header li:hover {
+  color: yellow;
+}
+header .card-header button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  gap: 30px;
+}
+.box {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+img {
+  width: 200px;
+  height: auto;
+}
+.box .name {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: blue;
+}
+.box .cost {
+  background-color: green;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  font-weight: 700;
+}
+ul {
+  display: flex;
+  gap: 50px;
+}
