@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      header {
+        padding: 0;
+        height: 100px;
+        width: 1320px;
+      }
+
+      header img {
+        height: 100px;
+        width: 1320px;
+      }
+      nav {
+        padding-top: 10px;
+        width: 1320px;
+      }
+
+      nav ul {
+        background-color: #00a69b;
+      }
+
+      nav ul li {
+        padding: 15px 30px;
+      }
+      nav > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+      }
+
+      nav > ul > li {
+        text-align: center;
+      }
+      nav > ul a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        color: red;
+      }
+
+      nav > ul li:hover {
+        background-color: #5f5c5c;
+      }
+      .cha {
+        position: relative;
+      }
+
+      .con {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style-position: inside;
+        display: none;
+      }
+
+      .cha:hover .con {
+        display: inline-block;
+      }
+
+      .con li {
+        text-align: left;
+        width: 200px;
+      }
+
+      section {
+        width: 1320px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      section img {
+        width: 250px;
+        height: 200px;
+        padding-right: 15px;
+        padding-top: 10px;
+      }
+
+      .left ul {
+        list-style-position: inside;
+      }
+
+      .left h3 {
+        padding: 10px;
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item p {
+        width: 700px;
+      }
+
+      footer {
+        background-color: black;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <img
+          src="./316240073_661404322315612_1331636509985403438_n.jpg"
+          alt=""
+        />
+      </header>
+      <nav>
+        <ul>
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Hoa sự kiện</a></li>
+          <li class="cha">
+            <a href="">Hoa cảnh</a>
+            <ul class="con">
+              <li><a href="">Hoa sống đời</a></li>
+              <li><a href="">Hoa trạng nguyên</a></li>
+              <li><a href="">Hoa dạ thảo nguyên</a></li>
+              <li><a href="">Hoa cúc chậu</a></li>
+              <li><a href="">Hoa dừa cạn</a></li>
+            </ul>
+          </li>
+          <li><a href="">Cây cảnh</a></li>
+          <li><a href="">Đồ trang trí</a></li>
+          <li><a href="">Liên hệ</a></li>
+          <li><a href="">Đăng ký</a></li>
+          <li><a href="">Giỏ hàng</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div class="left">
+          <h3>Tủ sách</h3>
+          <ul>
+            <li>Cây hoa cảnh tết</li>
+            <li>Mai vàng</li>
+            <li>Hoa cảnh sự kiện</li>
+            <li>Đồ trang trí</li>
+            <li>Trang cây treo tường</li>
+            <li>Chậu cảnh</li>
+            <li>Tường cây</li>
+            <li>Cây nội thất</li>
+            <li>Hoa tươi</li>
+            <li>Non bộ</li>
+            <li>Cây tài lộc-May mắn</li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="item">
+            <div><img src="item.png" alt="" /></div>
+            <div>
+              <h3>Bạch tuyết mai bonsai</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est,
+                sit! Praesentium exercitationem fugiat earum ipsa suscipit
+                ducimus eum, minus non! <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                numquam repellat quo reprehenderit odit fugiat esse, fuga
+                assumenda omnis consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div><img src="item.png" alt="" /></div>
+            <div>
+              <h3>Cây Kim Ngân</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est,
+                sit! Praesentium exercitationem fugiat earum ipsa suscipit
+                ducimus eum, minus non! <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                numquam repellat quo reprehenderit odit fugiat esse, fuga
+                assumenda omnis consequuntur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer><p>Bản quyền CNTT_HAUI.com</p></footer>
+    </div>
+  </body>
+</html>

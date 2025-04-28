@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Máy Tính Cộng</title>
+    <script>
+      let num1 = "";
+      let num2 = "";
+      let operator = "";
+
+      function appendNumber(number) {
+        if (operator === "") {
+          num1 += number;
+          document.getElementById("display").value = num1;
+        } else {
+          num2 += number;
+          document.getElementById("display").value = num2;
+        }
+      }
+
+      function setOperator(op) {
+        operator = op;
+      }
+
+      function calculate() {
+        const result = parseFloat(num1) + parseFloat(num2);
+        document.getElementById("display").value = result;
+        // Reset after calculation
+        num1 = "";
+        num2 = "";
+        operator = "";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="display" disabled />
+    <br />
+    <button onclick="appendNumber('1')">1</button>
+    <button onclick="appendNumber('2')">2</button>
+    <button onclick="appendNumber('3')">3</button>
+    <button onclick="setOperator('+')">+</button>
+    <br />
+    <button onclick="appendNumber('4')">4</button>
+    <button onclick="appendNumber('5')">5</button>
+    <button onclick="appendNumber('6')">6</button>
+    <br />
+    <button onclick="appendNumber('7')">7</button>
+    <button onclick="appendNumber('8')">8</button>
+    <button onclick="appendNumber('9')">9</button>
+    <br />
+    <button onclick="appendNumber('0')">0</button>
+    <button onclick="calculate()">=</button>
+  </body>
+</html>

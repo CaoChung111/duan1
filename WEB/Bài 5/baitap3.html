@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Giải phương trình bậc ax<sup>2</sup> + bx + c = 0</p>
+    <!-- <button onclick="giaiptb2()">Giải phương trình</button> -->
+    <p id="ketqua"></p>
+    <script>
+      function giaiptb2() {
+        var a = 4,
+          b = 6,
+          c = 2;
+        var delta = b * b - 4 * a * c;
+        var kq = "";
+        if (delta < 0) kq = "Phương trình vô nghiệm";
+        else if (delta == 0)
+          kq = "Phương trình có nghiệm kép x= " + -b / (2 * a);
+        else {
+          var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+          var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+          kq = "Phương trình có 2 nghiệm phân biệt x1=" + x1 + "; x2=" + x2;
+        }
+        document.getElementById("ketqua").innerHTML = kq;
+      }
+      giaiptb2();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="display"></div>
+    <h2>Tinh chi so BMI</h2>
+    <div class="box">
+      <label>Can nang: </label>
+      <input type="number" name="can" id="can" placeholder="Nhap can nang..." />
+      <label>Chieu cao: </label>
+      <input
+        type="number"
+        step="any"
+        name="cao"
+        id="cao"
+        placeholder="Nhap chieu cao..."
+      />
+      <button>Tinh BMI</button>
+    </div>
+  </body>
+  <script>
+    const a = document.querySelector("#can");
+    const b = document.querySelector("#cao");
+    const button = document.querySelector("button");
+    const display = document.querySelector(".display");
+    button.addEventListener("click", function () {
+      const s1 = a.value;
+      const s2 = b.value;
+      let bmi = s1 / Math.pow(s2, 2);
+      if (bmi < 18.5) {
+        display.innerHTML = "Thiếu cân ";
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+        alert("Binh thương");
+      }
+    });
+  </script>
+</html>

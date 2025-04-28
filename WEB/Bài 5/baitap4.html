@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Máy tính tổng 2 số</h3>
+    <input type="text" id="ketqua" /><br />
+    <button onclick="nhapso('0')">1</button>
+    <button onclick="nhapso('2')">2</button>
+    <button onclick="nhapso('3')">3</button>
+    <button onclick="nhapso('4')">4</button>
+    <button onclick="nhapso('5')">5</button>
+    <button onclick="pheptinh('+')">+</button><br />
+    <button onclick="nhapso('6')">6</button>
+    <button onclick="nhapso('7')">7</button>
+    <button onclick="nhapso('8')">8</button>
+    <button onclick="nhapso('9')">9</button>
+    <button onclick="nhapso('0')">0</button>
+    <button onclick="tinh()">=</button>
+    <script>
+      var so1 = null;
+      var so2 = null;
+      var check = null;
+      function nhapso(so) {
+        if (check == null) {
+          so1 = so;
+          document.getElementById("ketqua").value = so1;
+        } else {
+          so2 = so;
+          document.getElementById("ketqua").value = so1 + "+" + so2;
+        }
+      }
+      function pheptinh(pt) {
+        check = "+";
+        document.getElementById("ketqua").value = so1 + check;
+      }
+      function tinh() {
+        if (so1 != null && so2 != null) var kq = parseInt(so1) + parseInt(so2);
+        document.getElementById("ketqua").value = kq;
+        so1 = so2 = check = null;
+      }
+    </script>
+  </body>
+</html>

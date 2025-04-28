@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De 2</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        width: 1320px;
+        height: 100px;
+        padding-bottom: 10px;
+      }
+
+      nav {
+        width: 1320px;
+        padding-bottom: 10px;
+      }
+      nav ul {
+        background-color: #00a69b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .cha {
+        position: relative;
+      }
+
+      .con {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0%;
+      }
+
+      .con li {
+        width: 180px;
+        background-color: #00a69b;
+      }
+
+      nav ul li:hover {
+        background-color: #5f5c5c;
+      }
+
+      .cha:hover .con {
+        display: block;
+      }
+      section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+
+      .left ul {
+        width: 200px;
+      }
+
+      .right .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right img {
+        width: 250px;
+        height: 200px;
+      }
+
+      .right p {
+        width: 500px;
+      }
+
+      footer {
+        background-color: black;
+        width: 1320px;
+      }
+
+      footer p {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <header><img src="banner.png" alt="banner" /></header>
+      <nav>
+        <ul>
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Đồ gia dụng</a></li>
+          <li class="cha">
+            <a href="">Điện lạnh</a>
+            <ul class="con">
+              <li><a href="">Sản phẩm điện lạnh</a></li>
+              <li><a href="">Tủ lạnh theo hãng</a></li>
+              <li><a href="">Máy giặt theo hãng</a></li>
+              <li><a href="">Điều hòa theo hãng</a></li>
+            </ul>
+          </li>
+          <li><a href="">Điện tử-Âm thanh</a></li>
+          <li><a href="">Điện thoại</a></li>
+          <li><a href="">Laptop</a></li>
+          <li><a href="">Máy tính-Linh kiện</a></li>
+          <li><a href="">Hóa đơn mua hàng</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div class="left">
+          <h2>Siêu thị tại HÀ NỘI</h2>
+          <ul>
+            <li>Trần Anh-Cầu Giấy</li>
+            <li>Trần Anh-Long Biên</li>
+            <li>Trần Anh-Hai Bà Trưng</li>
+            <li>Trần Anh-Hà Đông</li>
+            <li>Trần Anh-Đống Đa</li>
+            <li>Trần Anh-Hoàng Mai</li>
+            <li>Trần Anh-Nam Từ Liêm</li>
+            <li>Trần Anh-AEON Mail</li>
+            <li>Trần Anh-Đông Anh</li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="item">
+            <img src="item.png" alt="" />
+            <div>
+              <h3>Đèn sưởi phòng tắm</h3>
+              <p>
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Error, beatae, officia quod ipsum saepe expedita eveniet quas
+                  laudantium accusantium vero nesciunt repellat est obcaecati.
+                  Repellat perferendis optio laboriosam facere delectus.</span
+                ><span
+                  >Repudiandae in consequatur, enim id et rerum porro, incidunt
+                  nisi soluta architecto fugit! Iste dolores natus quibusdam
+                  accusamus, doloremque fugiat perferendis est odio nemo quae at
+                  porro obcaecati, error numquam?</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="item.png" alt="" />
+            <div>
+              <h3>Quạt sưởi hồng ngoại</h3>
+              <p>
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Error, beatae, officia quod ipsum saepe expedita eveniet quas
+                  laudantium accusantium vero nesciunt repellat est obcaecati.
+                  Repellat perferendis optio laboriosam facere delectus.</span
+                ><span
+                  >Repudiandae in consequatur, enim id et rerum porro, incidunt
+                  nisi soluta architecto fugit! Iste dolores natus quibusdam
+                  accusamus, doloremque fugiat perferendis est odio nemo quae at
+                  porro obcaecati, error numquam?</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer><p>Bản quyền CNTT_HAUI.com</p></footer>
+    </div>
+  </body>
+</html>

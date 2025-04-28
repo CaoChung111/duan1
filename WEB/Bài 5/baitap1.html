@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Ngày tháng năm sinh:
+      <select name="day" id="day"></select>
+      tháng
+      <select name="month" id="month"></select>
+      năm
+      <select name="year" id="year"></select>
+    </p>
+    <script>
+      for (var i = 1; i <= 31; i++) {
+        var option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        document.getElementById("day").appendChild(option);
+      }
+      for (var i = 1; i <= 12; i++) {
+        var option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        document.getElementById("month").appendChild(option);
+      }
+      for (var i = 1900; i <= new Date().getFullYear(); i++) {
+        var option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        document.getElementById("year").appendChild(option);
+      }
+    </script>
+  </body>
+</html>

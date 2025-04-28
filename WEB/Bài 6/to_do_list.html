@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      input {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 6px 12px;
+      }
+      .item {
+        background-color: red;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>To-Do-List</h2>
+      <input type="text" placeholder="Nhận nhiệm vụ mới ở dây" />
+      <button>add</button>
+    </div>
+    <div class="display"></div>
+  </body>
+  <script>
+    const input = document.querySelector("input");
+    const button = document.querySelector("button");
+    const display = document.querySelector(".display");
+
+    button.addEventListener("click", function () {
+      const div = document.createElement("div");
+      div.classList.add("item");
+
+      const html = `
+        <div>${input.value}</div>
+        <div class="menu">
+          <button>thêm</button>
+          <button>sửa</button>
+          <button>xóa</button>
+        </div>
+      `;
+
+      div.innerHTML = html;
+      display.appendChild(div);
+      input.value = ""; // clear input after adding
+    });
+  </script>
+</html>

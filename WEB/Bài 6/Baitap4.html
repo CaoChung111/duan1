@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .maytinh {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        background-color: aquamarine;
+        width: 250px;
+        height: 110px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+      }
+      .nut {
+        width: 35px;
+        height: 35px;
+      }
+
+      input {
+        width: 240px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="ketqua" /><br />
+    <div class="maytinh">
+      <button class="nut" onclick="ghep('1')">1</button>
+      <button class="nut" onclick="ghep('2')">2</button>
+      <button class="nut" onclick="ghep('3')">3</button>
+      <button class="nut" onclick="ghep('4')">4</button>
+      <button class="nut" onclick="ghep('5')">5</button>
+      <button class="nut" onclick="pheptinh('-')">-</button>
+      <button class="nut" onclick="ghep('6')">6</button>
+      <button class="nut" onclick="ghep('7')">7</button>
+      <button class="nut" onclick="ghep('8')">8</button>
+      <button class="nut" onclick="ghep('9')">9</button>
+      <button class="nut" onclick="ghep('0')">0</button>
+      <button class="nut" onclick="tinh()">=</button>
+    </div>
+    <script>
+      var x = "";
+      var y = "";
+      var check = null;
+      function ghep(vl) {
+        if (check == null) {
+          x = vl;
+          document.getElementBy("ketqua").value = x;
+        } else {
+          y = vl;
+          document.getElementById("ketqua").value = x + "-" + y;
+        }
+      }
+      function pheptinh(pt) {
+        check = "-";
+      }
+      function tinh() {
+        if (x != null && y != null) var kq = parseInt(x) - parseInt(y);
+        document.getElementById("ketqua").value = kq;
+        x = y = check = null;
+      }
+    </script>
+  </body>
+</html>
